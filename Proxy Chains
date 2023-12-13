@@ -1,0 +1,28 @@
+Launch terminal
+sudo su
+apt-get install proxychains tor
+nano /etc/proxychains.conf
+uncomment dynamic proxy, proxy DNS requests,proxy dns.
+socks5 127.0.0.1 9050
+( press tab after socks5 to copy the foramt of code above)
+service tor stop( to ensure its not already running)
+service tor start
+open ned terminal
+proxychains firefox www.duckduckgo.com
+fiefox opens with duckduckgo url
+
+now we gotta check for dns leaks
+type check dns leaks in the duckduckgo search bar or just past "https://dnsleaktest.com" in the address bar.
+so you see , the location it shows is different than your actual location
+now go for standard test
+it might show a differect country now!! more secure isnt it!! (haha you made those cops crazy now)
+
+close the browser
+
+now back to terminal
+service tor restart
+proxychains firefox www.duckduckgo.com
+"https://dnsleaktest.com"
+Different IP now, go for standard test
+
+bruh you are anonumous
