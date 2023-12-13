@@ -1,1 +1,9 @@
+cloudfare dns service : 1.1.1.1
+1. improves speed
+2. privacy
 
+open the bloody terminal
+ sudo nano /etc/resolv/conf
+change nameserver to 1.1.1.1
+ctrl + o to save and then exit
+good to go
