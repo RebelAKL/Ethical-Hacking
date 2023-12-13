@@ -1,2 +1,10 @@
+go to openvpn.com and download any free vpn bundle
+extract the downloaded zip.
 open the bloody terminal
+navigate to the extracted zip folder
+cd Dowloads/vpn-book something something
+sudo openvpn vpnbook-us1-udp25000.vpn  # this is the name of the ovpn file which you desire to use 
+
+GOOD TO GO
+
 
